@@ -17,18 +17,55 @@ module.exports = function(app){
 
 
 
+
+
+
 	app.post('/api/friends', function(req, res){
 		var newFriend = req.body;
 
 		console.log(newFriend)
 
 
-		for (var i = newFriend.scores.length - 1; i >= 0; i--) {
 
 
-			console.log(newFriend.scores[i])
-		}
+var sumArray = []
 
+for (var i = 0; i < friends.length; i++) {
+
+
+
+var sum = 0;
+
+
+	for (var j = 0; j < 10; j++) {
+
+
+  sum += (Math.abs(parseInt(newFriend.scores[j]) - parseInt(friends[i].scores[j])));
+
+
+
+	}
+
+sumArray.push(sum)
+console.log(sumArray)
+}
+
+var test = parseInt((Math.min.apply(null, sumArray)));
+
+var test2 = sumArray.indexOf(test)
+
+
+console.log(friends[test2])
+
+res.json(friends[test2]);
+
+
+
+
+
+
+
+friends.push(newFriend)
 	});
 
 

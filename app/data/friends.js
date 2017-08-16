@@ -1,5 +1,5 @@
 
-var friends = 
+var friends =
 
 [
 	{
@@ -9,20 +9,19 @@ var friends =
 	},
 
 
+{
+	name:'Mazen',
+	photo:'test.jpeg',
+	scores:[ '2', '3', '3', '4', '1', '2', '2', '3', '5', '2' ]
+},
+
+{
+	name:'Khaled',
+	photo:'test.jpeg',
+	scores:[ '3', '3', '1', '4', '1', '2', '1', '4', '5', '1' ]
+}
 
 ];
-
-
-
-
-
-// app.post("")
-
-
-
-
-
-
 
 
 
